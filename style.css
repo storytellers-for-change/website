@@ -228,11 +228,17 @@ section + section {
 #nav-toggle .hamburger::after  { top: 6px; }
 
 /* 2. Mobile styles */
+/* hide hamburger by default */
+#nav-toggle {
+  display: none;
+}
+
+/* on small screens, only show it once header is scrolled (sticky) */
 @media (max-width: 768px) {
-  /* show toggle */
-  #nav-toggle {
+  #main-header.scrolled #nav-toggle {
     display: block;
   }
+}
   /* hide nav links by default */
   .main-nav {
     position: absolute;
