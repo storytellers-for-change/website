@@ -238,7 +238,7 @@ section + section {
   #main-header.scrolled #nav-toggle {
     display: block;
   }
-}
+
   /* hide nav links by default */
   .main-nav {
     position: absolute;
@@ -250,13 +250,16 @@ section + section {
     overflow: hidden;
     transition: max-height 0.4s ease;
   }
+
   /* stacked, full-width links */
   .main-nav ul {
     flex-direction: column;
   }
+
   .main-nav li + li {
     border-top: 1px solid rgba(0,0,0,0.1);
   }
+
   .main-nav a {
     display: block;
     padding: 1rem 2rem;
