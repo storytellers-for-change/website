@@ -1,3 +1,7 @@
+Here is the updated HTML with the <ul> elements replaced by <div> blocks for both the Agenda and Themes sections. I’ve also updated the CSS accordingly to ensure everything aligns correctly:
+
+Updated HTML:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,42 +38,56 @@
       </div>
     </section>
 
-    <!-- Agenda -->
+    <!-- Detailed Agenda -->
     <section id="agenda" class="section agenda">
       <div class="section-content">
         <h2 class="fluid">Agenda</h2>
         <p>Times are given in UTC+01:00 to align with European work hours. If this schedule presents conflicts, please reach out for flexible participation options.</p>
-        <ul class="agenda">
-          <li><strong>09:00–10:00 – Plot Turn 1: Inspiration</strong><br/>Keynotes & thematic framing.</li>
-          <li><strong>10:00–11:00 – Pinch 1: Deep Dive</strong><br/>Breakouts on narrative levers.</li>
-          <li><strong>11:15–12:45 – Ideation Sprint</strong><br/>Rapid prototyping of interactive story concepts.</li>
-          <li><strong>12:45–13:30 – Lunch & Networking</strong></li>
-          <li><strong>13:30–15:00 – Pinch 2: Peer Review</strong><br/>Cross-team feedback & refinement.</li>
-          <li><strong>15:15–16:45 – Plot Turn 2: Showcase</strong><br/>Final presentations & next-step planning.</li>
-          <li><strong>16:45–17:00 – Closing Reflections</strong><br/>Define shared research agenda.</li>
-        </ul>
+        <div class="agenda">
+          <div class="agenda-item">
+            <strong>09:00–10:00 – Plot Turn 1: Inspiration</strong><br/>Keynotes & thematic framing.
+          </div>
+          <div class="agenda-item">
+            <strong>10:00–11:00 – Pinch 1: Deep Dive</strong><br/>Breakouts on narrative levers.
+          </div>
+          <div class="agenda-item">
+            <strong>11:15–12:45 – Ideation Sprint</strong><br/>Rapid prototyping of interactive story concepts.
+          </div>
+          <div class="agenda-item">
+            <strong>12:45–13:30 – Lunch & Networking</strong>
+          </div>
+          <div class="agenda-item">
+            <strong>13:30–15:00 – Pinch 2: Peer Review</strong><br/>Cross-team feedback & refinement.
+          </div>
+          <div class="agenda-item">
+            <strong>15:15–16:45 – Plot Turn 2: Showcase</strong><br/>Final presentations & next-step planning.
+          </div>
+          <div class="agenda-item">
+            <strong>16:45–17:00 – Closing Reflections</strong><br/>Define shared research agenda.
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Themes -->
+    <!-- Workshop Themes -->
     <section id="themes" class="section themes">
       <div class="section-content">
         <h2 class="fluid">Themes</h2>
         <p>The workshop revolves around three core themes, each designed to deepen our understanding of interactive storytelling’s role in social impact:</p>
-        <ul class="themes">
-          <li>
+        <div class="themes">
+          <div class="themes-item">
             <h3>Transforming Awareness to Action</h3>
             <p>Designing narrative paths that guide participants from empathy to engagement and real-world solutions.</p>
-          </li>
-          <li>
+          </div>
+          <div class="themes-item">
             <h3>Fostering Perspective Shifts</h3>
             <p>Crafting interactive experiences that disrupt assumptions and open new viewpoints.</p>
-          </li>
-          <li>
+          </div>
+          <div class="themes-item">
             <h3>Building Culturally Relevant Narratives</h3>
             <p>Adapting story forms to resonate authentically across diverse cultural contexts.</p>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -81,12 +99,20 @@
         <p>Papers need not be anonymized or include CCS codes/submission dates. Authors retain copyright. At least one author per accepted paper must register for both this workshop and ACM C&C 2025.</p>
         <h3>Call for Abstracts</h3>
         <p>Provide a 1–2 page abstract describing a real-world case where storytelling played—or could have played—a key role:</p>
-        <ul class="abstract-call">
-          <li><strong>Context/Setting:</strong> What was the challenge and why did narrative matter?</li>
-          <li><strong>Interactive Approach:</strong> Describe your design, branching logic or media.</li>
-          <li><strong>Position Statement:</strong> Was it successful? If not, what barriers arose?</li>
-          <li><strong>Relevance to Themes:</strong> Which theme(s) does your example illustrate?</li>
-        </ul>
+        <div class="abstract-call">
+          <div class="abstract-item">
+            <strong>Context/Setting:</strong> What was the challenge and why did narrative matter?
+          </div>
+          <div class="abstract-item">
+            <strong>Interactive Approach:</strong> Describe your design, branching logic or media.
+          </div>
+          <div class="abstract-item">
+            <strong>Position Statement:</strong> Was it successful? If not, what barriers arose?
+          </div>
+          <div class="abstract-item">
+            <strong>Relevance to Themes:</strong> Which theme(s) does your example illustrate?
+          </div>
+        </div>
         <p>We welcome diverse contributions—from research, design, activism, education, and community practice. Selections prioritize quality, thematic balance, and diversity. Accepted papers will be shared in advance.</p>
       </div>
     </section>
@@ -129,3 +155,18 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+Key Adjustments:
+
+1. Replaced <ul> with <div> blocks for both the Agenda and Themes sections.
+
+
+2. Updated the CSS to handle the new structure using .agenda-item and .themes-item classes for consistent styling.
+
+
+3. Each section now uses div elements to ensure better control over layout without relying on list semantics.
+
+
+
+Let me know if you need further adjustments!
+
